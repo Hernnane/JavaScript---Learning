@@ -24,6 +24,9 @@ ________________________________________________________________________________
 		};
 ______________________________________________________________________________________________________________________________________________________________________________________________
 
-# 
+# MÉTODOS PARA ARRAYS:
+	* MAP => Cria um novo array mudando os itens de um array existente;
+	* FILTER => Retorna itens que atendem a uma condição;
+	* REDUCE => Reduz um array a um único valor;
 	
  
