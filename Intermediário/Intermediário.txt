@@ -5,3 +5,38 @@ ________________________________________________________________________________
     1. Função Object() => antigo [NÃO PRECISA];
     2. Funções Construtoras => Padrão [AS VEZES];
     3. Funções dentro de Classes => [FOCO NESSA | MODERNO].
+
+______________________________________________________________________________________________________________________________________________________________________________________________
+
+# GETTERS E SETTERS:
+    1. GET => Para obter valores de propriedades dentro de objetos;
+    2. SET => Para alterar valores de propriedades dentro de objetos;
+______________________________________________________________________________________________________________________________________________________________________________________________
+
+# MÉTODOS NATIVOS PARA OBJETOS:
+    1. object.keys() => Retorna as chaves das propriedades de um objeto;
+    2. object.values() => Retorna os valores das propriedades de um objeto;
+    3. object.entries() => Retorna os pares chave/valor de cada propriedade do objeto;
+______________________________________________________________________________________________________________________________________________________________________________________________
+
+# OPERADORES SPREAD/REST & DESESTRTUTURAÇÃO:
+    1. Spread Operator (...) => Copia ou combina objetos e arrays [ANTES DO "="];
+    2. Rest Operator (...) => Agrupa valores restantes em um array ou objeto [DEPOIS DO "="];
+    3. Desestruturação => Extrai valores ou propriedades diretamente de um objeto ou array [ANTES DO "="];
+______________________________________________________________________________________________________________________________________________________________________________________________
+
+# MÉTODOS DENTRO DE OBJETOS:
+    1. Funções Nomeadas;
+    2. Funções Anônimas;
+______________________________________________________________________________________________________________________________________________________________________________________________
+
+# ASSINATURA DE FUNÇÕES E PARÂMETROS OPCIONAIS:
+    1. Atribuição de um valor padrão na construção da função [PARÂMETRO OPCIONAL];
+    2. Rest Parameters [QTDE DE PARÂMETROS INDEFINIDA];
+    3. Parâmetros com Desestruturação [EXTRAÇÃO DE PROPRIEDADES DE OBJETOS NOS PARÂMETROS];
+______________________________________________________________________________________________________________________________________________________________________________________________
+
+# FUNÇÕES ASSÍNCRONAS E PROMISES:
+    1. Promises => Operação (Objeto) que pode ter Sucesso/Falha [RESOLVE | REJECT];
+    2. Async/Await => Forma mais simples/legível de lidar com Promises;
+    3. Fetch => Método par fazer requisições HTTP e retornar uma Promise; 

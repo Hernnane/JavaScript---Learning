@@ -1,0 +1,3 @@
+// FUNÇÕES ASSÍNCRONAS E PROMISSES
+
+//
