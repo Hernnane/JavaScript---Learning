@@ -1,0 +1,23 @@
+************************************************MANIPULAÇÃO DO DOM************************************************
+		/*Utiliza-se o .DOCUMENTO* para se manipular os elementos da página Web com JS*/
+
+# Métodos para acessar elementos no DOM:
+	1. ID => document.getElementById("id-elemento");
+	2. Classe => document.getElementsByClassName("nome-classe") [ARRAY COM OS ELEMENTOS SELECIONADOS];
+	3. TAG => document.getElementsByTagName("tag");
+	4. QUERY SELECTOR => document.querySelector(".classe") [RETORNA O PRIMEIRO ELEMENTO CORRESPONDENTE];
+	5. QUERY SELECTOR ALL => document.querySelectorAll(".classe") [RETORNA TODOS OS ELEMENTOS CORRESPONDENTES];
+
+# Manipulações possíveis:
+	1. Alterar Conteúdos;
+	2. Alterar Atributos;
+	3. Alterar Estilos;
+	4. Alterar Classes;
+	5. Adicionar/Remover Eventos;
+
+# Tipos de Eventos no DOM [MAIS COMUNS]:
+	1. Clicks;
+	2. Mouseover;
+	3. Keydown;
+	4. Input;
+	5. Etc...

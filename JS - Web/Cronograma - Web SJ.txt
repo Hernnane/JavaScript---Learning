@@ -1,0 +1,87 @@
+Plano de Estudo Completo para Manipulação e Responsividade com JS
+1. Manipulação do DOM (Document Object Model)
+
+    Introdução ao DOM e sua estrutura
+        O que é DOM?
+        Como o JS interage com HTML e CSS.
+        Métodos de acesso ao DOM (getElementById, querySelector, etc.).
+
+    Manipulação de elementos HTML
+        Alterando conteúdo com .innerHTML, .textContent, .value.
+        Modificando atributos (.setAttribute(), .classList para classes).
+        Criando e removendo elementos dinamicamente (.createElement(), .remove()).
+
+    Eventos no DOM
+        Eventos mais comuns (click, mouseover, keydown, etc.).
+        Adicionando e removendo eventos com addEventListener e removeEventListener.
+        Delegação de eventos para elementos dinâmicos.
+
+    Manipulação de estilos com JS
+        Alterando propriedades CSS diretamente via .style.
+        Trabalhando com classes (.classList.add(), .classList.toggle()).
+        Computando estilos com getComputedStyle().
+
+2. Responsividade Dinâmica com JavaScript
+
+    Detecção de tamanho da tela (Viewport)
+        window.innerWidth e window.innerHeight
+        matchMedia() para media queries em JS.
+
+    Manipulação responsiva de elementos
+        Alteração de layout com base no tamanho da tela.
+        Reorganização de elementos dinamicamente.
+
+    Eventos de redimensionamento
+        resize event para ajustar elementos dinamicamente.
+        Como evitar reflows e otimizar performance.
+
+    Carregamento condicional de conteúdo
+        Lazy loading de imagens e scripts conforme resolução.
+        Estratégias de carregamento baseadas no tamanho da tela.
+
+3. Animações e Interatividade com JavaScript
+
+    Manipulação de transições e animações CSS via JS
+        Adicionando e removendo classes animadas dinamicamente.
+        Controlando transition e animation.
+
+    Scroll effects e interatividade ao rolar a página
+        Eventos de scroll (scroll, scrollIntoView).
+        Sticky headers e efeitos de parallax simples.
+
+    Elementos interativos comuns
+        Menus responsivos (mobile first).
+        Modais (pop-ups), sidebars e carrosséis.
+        Tabs e sliders personalizados.
+
+4. Trabalhando com Formulários e Validação Dinâmica
+
+    Captura e manipulação de dados de formulários
+        Como acessar valores de campos (.value, .checked, .selected).
+        Eventos de formulário (submit, change, input).
+
+    Validação de formulários com JS
+        Validações personalizadas (e-mails, números, etc.).
+        Feedback visual para o usuário.
+        Prevenção de envio com preventDefault().
+
+    Interação com API de armazenamento local
+        localStorage e sessionStorage para salvar dados temporários.
+        Armazenando preferências de usuário.
+
+5. AJAX e Fetch API para Conteúdo Dinâmico
+
+    Requisições assíncronas com JS
+        Introdução ao conceito de AJAX e Fetch.
+        Carregamento de conteúdo sem recarregar a página.
+
+    Exibição de dados dinâmicos
+        Como atualizar a página com JSON recebido via AJAX.
+        Manipulação da UI com base nos dados recebidos.
+
+6. Boas Práticas e Performance
+
+    Delegação de eventos para melhorar performance.
+    Minimização de reflows e repaints ao manipular o DOM.
+    Uso eficiente de timers e intervalos (setTimeout, setInterval).
+    Evitar bloqueio de UI ao trabalhar com operações pesadas.

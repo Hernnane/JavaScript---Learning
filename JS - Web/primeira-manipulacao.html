@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Manipulação do DOM</title>
+
+    <!-- Adicionando estilo direto no documento HTML -->
+    <style>
+        .destaque{ color: red; font-weight: bold;}
+    </style>
+</head>
+<body>
+    <!-- Criando elementos para manipulação com JS -->
+    <h1 id="titulo">Título Original</h1>
+    <button id="alterarTexto">Alterar Texto</button>
+    <button id="adicionarClasse">Adicionar Classe</button>
+    <button id="removerTitulo">Remover Título</button>
+
+    <!-- Código JavaScript -->
+    <script>
+        // Alterando o texto do título
+        document.getElementById("alterarTexto").addEventListener("click", ()=>{
+            document.getElementById("titulo").innerText = "Título Alterado!";
+        });
+
+        // Adicionando classe de destaque ao título
+        document.getElementById("adicionarClasse").addEventListener("click", ()=>{
+            document.getElementById("titulo").classList.add("destaque");
+        });
+
+        // Removendo o título da página
+        document.getElementById("removerTitulo").addEventListener("click", ()=>{
+            document.getElementById("titulo").remove();
+        });
+    </script>
+</body>
+</html>
