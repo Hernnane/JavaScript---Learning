@@ -1,0 +1,4 @@
+************************************************TIPOS DE EVENT LISTENERS************************************************
+1. CHANGE => detecta mudança de tamanhos de tela em tempo real;
+2. RESIZE => detecta alterações de tamanho da janela;
+3. 
