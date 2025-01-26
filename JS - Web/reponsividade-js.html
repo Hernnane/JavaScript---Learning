@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade com JS</title>
+
+    <style>
+        body { text-align: center; transition: all 0.9s ease; }
+        #info { font-size: 24px; margin-top: 20px; }
+        .mobile { background-color: lightblue; }
+        .desktop { background-color: lightgreen; }
+    </style>
+</head>
+<body>
+
+    <h1>Teste de Responsividade</h1>
+    <p id="info">Redimensione a tela para ver as mudanças!</p>
+
+    <script>
+        function verificarTela(){
+            const largura = window.innerWidth;
+            const info = document.getElementById("info");
+
+            if(largura < 768){
+                document.body.classList.add("mobile");
+                document.body.classList.remove("desktop");
+                info.innerText = "Modo Mobile Ativado!";
+                info.style.color = "white";
+            }
+            else{
+                document.body.classList.add("desktop");
+                document.body.classList.remove("mobile");
+                info.innerText = "Modo Desktop Ativado!";
+                info.style.color = "black";
+            }
+        }
+
+        window.addEventListener("resize", verificarTela);
+        verificarTela();
+
+    </script>
+    
+</body>
+</html>

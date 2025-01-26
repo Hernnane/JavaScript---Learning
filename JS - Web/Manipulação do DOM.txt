@@ -23,9 +23,63 @@
 	5. Etc...
 
 ************************************************RESPONSIVIDADE COM JAVASCRIPT************************************************
+* OBS - Usar o JavaScript para adicionar classes é bem prático em uso de botões ou divs que precisam aparecer ou não (hidden)*
 
 # MEDIA QUERIES (API - WINDOW.MATCHMEDIA()):
 	=> Utilização bem parecida com Media Queries no CS puro, porém aqui você chama uma função condicional pra saber o tamanho da tela;
 
 # WINDOW.INNERWIDTH:
 	=> retorna a largura da janela em pixels (px);
+	=> usar como condicional para aplicar responsividade, adicionar classes criadas para adaptação de acordo com o tamanho da tela;
+	=> window.addEventListener("resize", verificarResponsividade) => [Exemplo de utilização da WINDOW para controle de responsividade]; 
+	=> Orientação da tela (vertical/horizontal) [window.screen.orientation.type.includes("portrait")];
+	
+# MENUS RESPONSIVOS:
+	=> Classe hidden (insere/retira a classe hiddens de um elemento);
+	
+************************************************CLASSES E ESTILOS DINÂMICOS************************************************
+
+# CLASS LIST (classList.):
+	=> ALTERAR CLASSES:
+		*ADD => Adiciona uma classe;
+		*REMOVE => Remove uma calsse;
+		*TOGGLE => Adiciona se não tiver, remove se já existir [alternância];
+		*CONTAINS => Verifica se existe uma classe em determinado elemento. 
+
+# STYLE:
+	=> ALTERAR ESTILOS INLINE (.style.):
+		*EX => texto.style.color = "red"; 
+
+************************************************EVENTOS JAVASCRIPT************************************************
+
+# ADICIONAR EVENTOS:
+	1. Atributo HTML (não recomendado):
+		=> <button onclick="minhaFuncao()">Clique aqui</button>;
+
+	2. Propriedade do Elemento (tradicional):
+		=> const btn = document.getElementById("meuBotao");
+					   btn.onclick = function() {
+    				   alert("Botão clicado!");
+		   };
+
+	3. Método addEventListener (RECOMENDADO - FOCA NESSE):
+		=> btn.addEventListener("click", () => {
+    	   	alert("Botão clicado!");
+		   });
+
+# TIPOS DE EVENTOS:
+	1. CLICK 		=> 	Elemento é clicado;
+	2. MOUSEOVER 	=> 	Mouse passa por cima do elemento;
+	3. MOUSEOUT 	=> 	Mouse sai do elemento;
+	4. KEYDOWN 		=> 	Tecla pressionada;
+	5. KEYUP 		=> 	Tecla liberada;
+	6. CHANGE 		=> 	Valor em um campo de formulário muda;
+	7. SUBMIT 		=> 	Ao enviar o formulário;
+	8. FOCUS 		=> 	Um campo recebe foco;
+	9. BLUR 		=> 	Um campo perde foco;
+
+# REMOVER EVENTOS:
+	=> removeEventListener;
+
+# PREVENINDO (EVITANDO) COMPORTAMENTO PADRÃO:
+	=> event.preventDefault [impede o comportamento padrão para que se possa fazer algo antes];
