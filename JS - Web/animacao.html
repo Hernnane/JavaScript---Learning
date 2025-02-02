@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="quadrado" style="width:50px; height:50px; background:red; position:absolute;margin: 50px;"></div>
+    <button onclick="animar()">Animar</button>
+
+<script>
+    function animar() {
+        let posicao = 0;
+        const elemento = document.getElementById("quadrado");
+        const intervalo = setInterval(() => {
+            if (posicao >= 300) {
+                clearInterval(intervalo);
+            } else {
+                posicao++;
+                elemento.style.left = posicao + "px";
+            }
+        }, 5);
+    }
+</script>
+</body>
+</html>

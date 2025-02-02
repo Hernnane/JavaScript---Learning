@@ -22,6 +22,22 @@
 	4. Input;
 	5. Etc...
 
+# CRIANDO/INSERINDO ELEMENTOS NO DOM:
+	=> document.creatElement("tag") - Cria um novo elemento HTML;
+
+	=> element.appendChild(novoElemento) - Adiciona um elemento como filho ao elemento pai;
+
+	=> element.insertAdjacentHTML("posição", "html") - Insere HTML em uma posição específica:
+			1. "beforebegin" → Antes do elemento.
+			2. "afterbegin" → Dentro do elemento, antes do conteúdo existente.
+			3. "beforeend" → Dentro do elemento, depois do conteúdo existente.
+			4. "afterend" → Depois do elemento.
+
+# MIDIFICANDO ATRIBUTOS HTML:
+	=> setAttribute("atributo", "valor") - Define um atributo;
+	=> getAttribute("atributo") - Obtém o valor de um atributo;
+	=> removeAttribute("atributo") - Remove um atributo.
+
 ************************************************RESPONSIVIDADE COM JAVASCRIPT************************************************
 * OBS - Usar o JavaScript para adicionar classes é bem prático em uso de botões ou divs que precisam aparecer ou não (hidden)*
 
@@ -83,3 +99,11 @@
 
 # PREVENINDO (EVITANDO) COMPORTAMENTO PADRÃO:
 	=> event.preventDefault [impede o comportamento padrão para que se possa fazer algo antes];
+
+************************************************ANIMAÇÕES JAVASCRIPT************************************************
+
+# USANDO setInterval() [ANIMAÇÕES MAIS SIMPLES | PODE GERAR TRAVAMENTOS]:
+	=> Muda algum valor gradualmente - Define valor de tempo como intervalo de tempo, e faz com que a cada vez que esse tempo passe, a função inserida nesse setIterval se repita;
+
+# USANDO requestAnimationFrame() [ANIMAÇÕES MAIS SUAVES | MELHOR DESEMPENHO]:
+	=> Chama o repetimento da animação no final dela;
