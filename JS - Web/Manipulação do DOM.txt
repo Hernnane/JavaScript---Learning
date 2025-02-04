@@ -107,3 +107,14 @@
 
 # USANDO requestAnimationFrame() [ANIMAÇÕES MAIS SUAVES | MELHOR DESEMPENHO]:
 	=> Chama o repetimento da animação no final dela;
+
+************************************************EVENTOS SCROLL JAVASCRIPT************************************************
+# EXEMPLO:
+	window.addEventListener("scroll", () => {
+    	console.log("Scroll detectado! Posição:", window.scrollY);
+	});
+
+# window.scrollY => detectar posição do scroll;
+# getBoundingClientRect() => Verificar se um elemento está visível;
+# classList.add() => usa-se classes para ativar as animações de acordo com o scroll;
+# position fixed => usa uma classe no menu com position fixed pra fixar o menu; 
